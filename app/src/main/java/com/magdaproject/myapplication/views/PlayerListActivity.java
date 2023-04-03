@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.google.android.material.divider.MaterialDividerItemDecoration;
 import com.google.gson.Gson;
 import com.magdaproject.myapplication.R;
 import com.magdaproject.myapplication.databinding.PlayerListBinding;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,7 +35,7 @@ public class PlayerListActivity extends AppCompatActivity {
         int counter = settings.getInt("counter", 0);
         List<Player> playerList = new ArrayList<Player>();
         for (int i = 1; i <= counter; i++) {
-            String playerString = settings.getString("Player" + counter, "");
+            String playerString = settings.getString("Player" + i, "");
             Player player = new Gson().fromJson(playerString, Player.class);
             playerList.add(player);
         }
@@ -42,6 +44,9 @@ public class PlayerListActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager
                 = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         binding.recyclerView.setLayoutManager(layoutManager);
+        MaterialDividerItemDecoration dividerItemDecoration = new MaterialDividerItemDecoration(this,
+                layoutManager.getOrientation());
+        binding.recyclerView.addItemDecoration(dividerItemDecoration);
     }
 
     @Override

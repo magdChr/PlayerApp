@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
@@ -10,8 +11,8 @@
         android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -20,8 +21,8 @@
         android:textColor="@color/purple_500"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/original_name" />
 
     <TextView
@@ -30,8 +31,8 @@
         android:textColor="@color/purple_500"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/e_mail" />
 
     <TextView
@@ -40,8 +41,8 @@
         android:textColor="@color/purple_500"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textSize="12sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/user_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
