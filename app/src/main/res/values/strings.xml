@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome_message">Welcome to Player\' s Project!</string>
+    <string name="new_player">New Player</string>
+    <string name="player_list">Player List</string>
+    <string name="main_page">Welcome page</string>
+    <string name="insert_prompt">Insert your Player\'s Info</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name and Surname</string>
+    <string name="email">Email</string>
+    <string name="invalid_info">You have to fill every field!!!</string>
+    <string name="success_msg">You have successfully stored Player %s!!!</string>
+    <string name="delete_records">Delete Records</string>
+</resources>
